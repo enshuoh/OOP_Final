@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="BIG5"?> 
+ <itemlist> 
+   <item name="百元" image="image\transparent.png" hide="百元掰" map="5" posx="16" posy="11" width="1" height ="1">
+		書裡竟然夾了一張百元鈔，超幸運
+		<give item = "百元"></give>
+		<givehide item = "百元掰"></givehide>
+   </item>
+   <item name="饅頭" image="image\cat.png" hide="饅頭隱藏" map="1" posx="81" posy="21" width="2" height ="2">
+		你抓到了饅頭，牠有點重，掙扎中你不小心扯下了一撮毛
+		<give item = "饅頭"></give>
+		<give item = "烏黑貓毛"></give>
+		<givehide item ="饅頭隱藏"></givehide>
+   </item>
+   <item name="恐怖OOP" image="image\book.png" hide="OOP掰" map = "5" posx = "2" posy = "16" width = "2" height = "2">
+   你撿到了一本別人讀不下去的恐怖OOP
+		<give item = "恐怖OOP"></give>
+		<givehide item = "OOP掰"></givehide>
+   </item>
+   <item name="金田一" image="image\book.png" hide="金田一掰" map = "7" posx = "29" posy = "17" width = "1" height = "1">
+   你撿到了好看的恐怖金田一
+		<give item = "金田一"></give>
+		<givehide item = "金田一掰"></givehide>
+   </item>
+   <item name="歡樂ML" image="image\book.png" hide="ML掰" map="1" posx="25" posy="14" width="2" height="2">
+	你撿到了一本歡樂ML
+	<give item="歡樂ML"/>
+	<givehide item="ML掰"/>
+	</item>
+   <item name="Python3" image="image\transparent.png" hide="python掰" map = "4" posx = "4" posy = "3" width = "2" height = "2">
+   你撿到了一本python基本教材
+		<give item = "Python3"></give>
+		<givehide item = "python掰"></givehide>
+   </item>   
+   <item name="噴水池" end="1" image="image\transparent.png" map = "1" posx = "39" posy = "29" width = "2" height = "2" >
+		這是一個漂亮的噴水池，你有種想跳進去的慾望
+		<useitem item = "白金球拍">
+			撲通
+			<talk end = "0">
+				跟桌球拍說再見
+				<talk key = "再見">
+					桌球拍：再見~
+					<take item = "白金球拍"></take>
+				</talk>
+				<talk>
+					你依依不捨的撿起桌球拍
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item = "鑽石球拍">
+			撲通
+			<talk end = "0">
+				跟桌球拍說再見
+				<talk key = "再見">
+					桌球拍：再見~
+					<take item = "鑽石球拍"></take>
+				</talk>
+				<talk>
+					你依依不捨的撿起桌球拍
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item = "破桌球拍">
+			撲通
+			<talk>
+				稀哩
+				<talk>
+					嘩啦啦
+					<talk>
+						湖中女神：安安
+						<talk end = "0">
+							湖中女神：請問你掉的是這個白金桌球拍還是這個鑽石桌球拍
+							<talk key = "白金">
+								湖中女神：你真是不誠實，掰掰
+								<take item="破桌球拍"></take>
+								<takehide item="拍拍掰"></takehide>
+							</talk>
+							<talk key = "鑽石">
+								湖中女神：你真是不誠實，掰掰
+								<take item="破桌球拍"></take>
+								<takehide item="拍拍掰"></takehide>
+							</talk>
+							<talk key = "破">
+								湖中女神：真是個誠實的乖寶寶，我要兩個桌球拍都送你
+								<give item="白金球拍"></give>
+								<give item="鑽石球拍"></give>
+								<take item="破桌球拍"></take>
+							</talk>
+							<talk key = "不是">
+								湖中女神：真是個誠實的乖寶寶，我要兩個桌球拍都送你
+								<give item="白金球拍"></give>
+								<give item="鑽石球拍"></give>
+								<take item="破桌球拍"></take>
+							</talk>
+							<talk>
+								湖中女神：我聽不懂你在說什麼
+							</talk>
+						</talk>
+					</talk>
+				</talk>
+			</talk>
+		</useitem>
+   </item>
+   <item name="店員身體" image="image\clerk.png" map = "6" posx = "18" posy = "3" width = "2" height = "3" >
+   </item>
+   <item name="店員" end="-1" image="image\transparent.png" map = "6" posx = "18" posy = "5" width = "2" height = "3" >
+		<talk end="0">
+			店員：帥哥帥哥 耽誤一下時間喔
+			<need item="超●多錢"></need>
+			<talk key="" end="0">
+			店員：唉唷 不要這樣嘛 你先拿著一下嘛
+				<talk key="">
+					店員：拿拉
+					<talk>
+					店員：拿拉
+						<talk end="0">
+							店員：拿拉
+							<talk key="">
+								店員：欸，我們是那個還在就學的土木系學生阿
+								<talk>
+								店員：阿，現在有一棟系館，好便宜，是我們自己設計的&#13;阿你要支持一下，一棟才只要3千萬								
+									<talk>
+									店員：你要支持一下
+										<talk >
+											店員：支持一下阿~~
+											<talk end = "0">
+												你可以選擇 要/不要
+												
+												<talk key ="不要">
+													店員：X你X，XX，浪費我時間
+												</talk>
+												<talk key ="要">
+													你用超●多錢購買了一棟系館
+													<give item = "一棟系館"></give>
+													<take item = "超●多錢"></take>
+													<give item = "很●多錢"></give>
+												</talk>
+												<talk key ="">
+													店員：X你X，XX，浪費我時間
+												</talk>
+											</talk>
+										</talk>
+									</talk>
+								</talk>
+								
+							</talk>
+						</talk>
+					</talk>
+				</talk>
+			</talk>
+		</talk>
+		<talk>
+			店員：先生現在旺仔小饅頭，正在促銷，一包只要100元
+			<need item="百元"></need>
+		</talk>
+		<talk>
+			店員：歡迎光臨!我們這裡什麼都有!什麼都賣!什麼都不奇怪!
+		</talk>
+		<useitem item="百元">
+			你得到了旺仔小饅頭
+			<give item="旺仔饅頭"></give>
+			<take item="百元"></take>
+		</useitem>
+   </item>
+   
+   <item name="open醬身體" image="image\open.png" map = "6" posx = "23" posy = "3" width = "2" height = "3" >
+   </item>
+   <item name="open醬" end="-1" image="image\transparent.png" map = "6" posx = "23" posy = "5" width = "2" height = "3" >
+	<talk>
+	恭喜發大財
+	<talk>
+	祝你新年OPEN
+	<talk>
+	我就是旺旺旺"低"OPEN將　
+	<talk>
+	啦~啦啦~
+	<talk>
+	哦--------Open!!
+	</talk>	
+	</talk>
+	</talk>	
+	</talk>
+	</talk>
+	<useitem item = "寶藏箱">
+	恭喜發大財
+	<talk>
+	祝你新年OPEN
+	<talk>
+	我就是旺旺旺"低"OPEN將　
+	<talk>
+	啦~啦啦~
+	<talk>
+	哦--------Open!!
+	<talk>
+	寶藏箱被打開了
+	<take item="寶藏箱"></take>
+	<give item="超●多錢"></give>
+	</talk>
+	</talk>	
+	</talk>
+	</talk>	
+	</talk>
+	</useitem>
+	
+   </item>
+   
+   <item name="周承復" end="-1" image="image\ccf.png" map = "2" posx = "1" posy = "11" width = "2" height = "3" >
+
+		<talk>
+			周承復：嗚嗚嗚嗚嗚
+			<need item = "淚水"></need>
+		</talk>
+		<talk>
+			周承復：嗚嗚嗚嗚嗚
+			<need item = "五月花"></need>
+		</talk>
+		<talk>
+			周承復：同學你好阿，哈哈哈哈哈哈哈哈
+		</talk>
+		<useitem item = "五月花">
+			周承復：謝謝你，我好受多了
+			<talk>
+				周承復：我想了很久，決定將我的桌球遺志交付給你
+				<talk>
+					你獲得了周承復珍藏的菁英桌球拍
+					<give item="菁英球拍"></give>
+					<take item="五月花"></take>
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item = "破桌球拍">
+			你跟周承復進行了比賽
+			<play game="pingpung" diff="3">
+				<result value = "lose">
+					你被打爆了
+					<talk>
+						周承復：同學，我覺得你的桌球拍需要換了，哈哈哈哈哈
+					</talk>	
+				</result>
+				<result value = "win">
+					怎麼可能!!你作弊吧
+					
+				</result>
+			</play>	
+		</useitem>
+		<useitem item = "白金球拍" end="-1">
+			<talk end="1">
+				周承復：我不要跟你打了
+				<need item = "淚水"></need>
+			</talk>
+			<talk end="0">
+				周承復：看你手上的桌球拍&#13;是守德派你來的對吧？
+				<needhide item = "周承復打"></needhide>
+				<talk key="對">
+					周承復：那就來吧!
+
+						<talk> 
+						你跟周承復進行了比賽	
+						<need item = "一勝"></need>
+							<play game="pingpung" diff="2">
+								<result value = "lose">
+									你有點爛
+									<talk>
+										周承復：同學，再多加油吧
+									</talk>	
+								</result>
+								<result value = "win">
+									雖然有點驚險，你還是打贏了	
+								<talk> 
+									周承復：事不過三&#13;哈哈哈哈哈哈哈
+									<talk>
+										你獲得了二勝
+										<take item = "一勝"></take>
+										<give item = "二勝"></give>
+									</talk>
+								</talk>	
+								</result>
+							
+							</play>	
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽
+						<need item = "二勝"></need>						
+						<talk> 
+							周承復：我下一次就會贏啦&#13;哈哈哈哈哈哈哈
+							
+							<talk>
+								你獲得了三勝
+								<take item = "二勝"></take>
+								<give item = "三勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽
+						<need item = "三勝"></need>						
+						<talk> 
+							周承復：輸四場真意外&#13;哈哈哈哈哈哈哈
+							
+							<talk>
+								你獲得了四勝
+								<take item = "三勝"></take>
+								<give item = "四勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽		
+						<need item = "四勝"></need>
+						<talk> 
+							周承復：你好像有一點過份阿&#13;哈哈哈哈哈哈哈
+							
+							<talk>
+								你獲得了五勝
+								<take item = "四勝"></take>
+								<give item = "五勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽	
+						<need item = "五勝"></need>
+						<talk> 
+							周承復：你竟然...嗚嗚嗚嗚嗚嗚
+							
+							<talk>
+								你獲得了淚水
+								<take item = "五勝"></take>
+								<give item = "淚水"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk>
+							你跟周承復進行了比賽
+							<play game="pingpung" diff="2">
+								<result value = "lose">
+									你有點爛
+									<talk>
+										周承復：同學，再多加油吧
+									</talk>	
+								</result>
+								<result value = "win">
+									雖然有點驚險，你還是打贏了	
+									<talk>
+									周承復：我竟然輸了...你好像蠻厲害的阿&#13;哈哈哈哈哈哈哈
+										<talk>
+										你獲得了一勝
+										<give item = "一勝"></give>
+										</talk>
+									</talk>
+								</result>
+							</play>	
+						</talk>
+				</talk>
+				<talk key="" end="2">
+						原來我會錯意啦，哈哈哈哈哈哈哈
+				</talk>
+			</talk>
+				
+
+			<talk>
+				周承復：我沒有要找人打桌球阿
+			</talk>
+			
+		</useitem>
+		<useitem item = "鑽石球拍" end="-1">
+			<talk end="1">
+				周承復：我不要跟你打了
+				<need item = "淚水"></need>
+			</talk>
+			<talk end="0">
+				周承復：看你手上的桌球拍&#13;是守德派你來的對吧？
+				<needhide item = "周承復打"></needhide>
+				<talk key="對">
+					周承復：那就來吧!
+
+						<talk> 
+						你跟周承復進行了比賽	
+						<need item = "一勝"></need>
+							<play game="pingpung" diff="1">
+								<result value = "lose">
+									你有點爛
+									<talk>
+										周承復：同學，再多加油吧
+									</talk>	
+								</result>
+								<result value = "win">
+									你有點輕鬆的打贏了	
+								<talk> 
+									周承復：事不過三&#13;哈哈哈哈哈哈哈
+									<talk>
+										你獲得了二勝
+										<take item = "一勝"></take>
+										<give item = "二勝"></give>
+									</talk>
+								</talk>	
+								</result>
+							
+							</play>	
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽
+						<need item = "二勝"></need>						
+						<talk> 
+							周承復：我下一次就會贏啦&#13;哈哈哈哈哈哈哈
+
+							<talk>
+								你獲得了三勝
+								<take item = "二勝"></take>
+								<give item = "三勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽
+						<need item = "三勝"></need>
+						<talk> 
+							周承復：輸四場真意外&#13;哈哈哈哈哈哈哈
+							
+							<talk>
+								你獲得了四勝
+								<take item = "三勝"></take>
+								<give item = "四勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽		
+						<talk> 
+							周承復：你好像有一點過份阿&#13;哈哈哈哈哈哈哈
+							<need item = "四勝"></need>
+							<talk>
+								你獲得了五勝
+								<take item = "四勝"></take>
+								<give item = "五勝"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk> 
+						你跟周承復進行了比賽	
+						<talk> 
+							周承復：你竟然...嗚嗚嗚嗚嗚嗚
+							<need item = "五勝"></need>
+							<talk>
+								你獲得了淚水
+								<take item = "五勝"></take>
+								<give item = "淚水"></give>
+							</talk>
+						</talk>
+						</talk>
+						<talk>
+							你跟周承復進行了比賽
+							<play game="pingpung" diff="1">
+								<result value = "lose">
+									你有點爛
+									<talk>
+										周承復：同學，再多加油吧
+									</talk>	
+								</result>
+								<result value = "win">
+									你有點輕鬆的打贏了
+									<talk>
+									周承復：我竟然輸了...你好像蠻厲害的阿&#13;哈哈哈哈哈哈哈
+										<talk>
+										你獲得了一勝
+										<give item = "一勝"></give>
+										</talk>
+									</talk>
+								</result>
+							</play>	
+						</talk>
+				</talk>
+				<talk key="" end="2">
+						原來我會錯意啦，哈哈哈哈哈哈哈
+				</talk>
+			</talk>
+				
+
+			<talk>
+				周承復：我沒有要找人打桌球阿
+			</talk>
+			
+		</useitem>
+
+		
+
+   </item>
+   
+   
+   <item name="林守德" end="-1" image="image\linso.png" map = "3" posx = "17" posy = "4" width = "2" height = "3" >
+		<useitem item = "菁英球拍">
+			你跟林守德進行了比賽
+			<play game="pingpung" diff="3">
+				<result value = "lose">
+					你被打爆了
+					<talk>
+					林守德：你實力不錯了，再多試幾次吧
+					</talk>
+				</result>
+				<result value = "win">
+					林守德：我甘拜下風了，你有桌球國手的實力
+					<givehide item = "End3">
+					</givehide>
+					
+				</result>
+			</play>	
+		</useitem>
+		<useitem item = "破桌球拍">
+			你跟林守德進行了比賽
+			<play game="pingpung" diff="4">
+				<result value = "lose">
+					你被打爆了
+					<talk>
+					林守德：你用這種東西是打不贏我的，換換再來吧
+					</talk>
+				</result>
+				<result value = "win">
+					怎麼可能!!你作弊吧
+					
+				</result>
+			</play>	
+		</useitem>	
+		<useitem item = "白金球拍">
+			你跟林守德進行了比賽
+			<play game="pingpung" diff="4">
+				<result value = "lose">
+					你被打爆了
+					<talk>
+						林守德：你用這種東西是打不贏我的，先去找周承復練練吧
+						<needhide item="周承復打"></needhide>
+					</talk>
+					<talk>
+						林守德：你用這種東西是打不贏我的，先去找周承復練練吧
+						<givehide item="周承復打"></givehide>
+					</talk>				
+				</result>
+				<result value = "win">
+					怎麼可能!!你作弊吧
+					
+				</result>
+			</play>	
+		</useitem>
+		<useitem item = "鑽石球拍">
+			你跟林守德進行了比賽
+			<play game="pingpung" diff="4">
+				<result value = "lose">
+					你被打爆了
+					<talk>
+						林守德：林守德：差一點就輸給你了，呵呵&#13;你得先打爆周承復才有和我一戰的機會啊		
+						<needhide item="周承復打"></needhide>
+					</talk>
+					<talk>
+						林守德：林守德：差一點就輸給你了，呵呵&#13;你得先打爆周承復才有和我一戰的機會啊		
+						<givehide item="周承復打"></givehide>
+					</talk>				
+				</result>
+				<result value = "win">
+					怎麼可能!!你作弊吧
+				</result>
+			</play>	
+		</useitem>
+		<talk>
+			林守德：你竟然把我的好朋友承復給弄哭了!
+			<need item="淚水"></need>
+			<talk>
+				林守德：你靠的根本就是拍子吧，先交給我保管!
+				<need item="白金球拍"></need>
+				
+				<take item="白金球拍"></take>
+				<take item="鑽石球拍"></take>
+				<talk>
+					你的拍子被收走了
+					<talk>
+					林守德：現在大概只有李明穗可以安慰這麼傷心的承復了
+					</talk>
+				</talk>
+			</talk>
+			<talk>
+				林守德：你靠的根本就是拍子吧，先交給我保管!
+				<need item="鑽石球拍"></need>
+				
+				<take item="白金球拍"></take>
+				<take item="鑽石球拍"></take>
+				<talk>
+					你的拍子被收走了
+					<talk>
+					林守德：現在大概只有李明穗可以安慰這麼傷心的承復了
+					</talk>
+				</talk>
+			</talk>
+			<talk>
+				林守德：現在大概只有李明穗可以安慰這麼傷心的承復了
+			</talk>
+		</talk>
+		
+		<talk>
+			林守德：是男人，就拿球拍跟我挑戰!
+			<need item="破桌球拍"></need>
+			<talk>
+				林守德：打贏就讓你機率一百分!
+			</talk>
+		</talk>
+		<talk>
+			林守德：是男人，就拿球拍跟我挑戰!
+			<need item="菁英球拍"></need>
+			<talk>
+				林守德：打贏就讓你機率一百分!
+			</talk>
+		</talk>
+		<talk>
+			林守德：是男人，就拿球拍跟我挑戰!
+			<need item="鑽石球拍"></need>
+			<talk>
+				林守德：打贏就讓你機率一百分!
+			</talk>
+		</talk>
+		<talk>
+			林守德：是男人，就拿球拍跟我挑戰!
+			<need item="白金球拍"></need>
+			<talk>
+				林守德：打贏就讓你機率一百分!
+			</talk>
+		</talk>
+		<talk end="0">
+			林守德：好無聊喔，都沒有人可以陪我打桌球
+			<talk key="桌球">
+				林守德：我好像聞到垃圾桶裡有桌球拍的味道
+			</talk>
+			<talk key="打">
+				林守德：我好像聞到垃圾桶裡有桌球拍的味道
+			</talk>
+			
+			<talk>
+				林守德：你快去找一隻桌球拍來陪我打
+			</talk>
+		</talk>
+
+		
+   </item>
+   
+   <item name="破爛桌球拍" hide="拍拍掰" image="image\transparent.png" map = "3" posx = "33" posy = "19" width = "1" height = "1" >
+		你撿到了一個臭臭爛爛發霉的拍拍
+		
+		<give item = "破桌球拍"></give>
+		<givehide item = "拍拍掰"></givehide>
+		
+   </item>
+   
+   
+   <item name="許小鬼" end="0" image="image\classmate1_1.png" map = "7" posx = "25" posy = "11" width = "2" height = "3" >
+		許小鬼：我好弱喔
+		<talk key=""  end = "1">
+			強者同學：天啊你有車車
+			<need item = "賽車"></need>
+			<talk key=""  end = "1">
+				強者同學：再送你一台
+				<give item = "賽車"></give>
+			</talk>
+		</talk>
+		<talk key="OOP" end = "2">
+			許小鬼：都要考試了，我作業都還沒寫欸
+		</talk>
+		<talk key="oop" end = "2">
+			許小鬼：都要考試了，我作業都還沒寫欸
+		</talk>
+		<talk key="考試" end = "2">
+			許小鬼：哭哭，我都還沒有讀&#13;聽說可以自己去找老師拿考卷&#13;不過最好還是先學好再考比較好
+			
+		</talk>	
+		<talk key="被當">
+			許小鬼：不錯不錯
+		</talk>	
+		<talk key="" end = "1">
+			許小鬼：強耶～
+		</talk>
+		
+		<useitem item = "OOP小抄">
+			許小鬼：這上面...寫的東西好像都怪怪的欸
+			<talk>
+				許小鬼在你的小抄上加上了超多東西
+				<talk>
+					你的OOP小抄升級為OOP完美大抄了
+					<take item="OOP小抄"></take>
+					<give item="完美大抄"></give>
+				</talk>
+			</talk>
+		</useitem>		
+		
+   </item>
+   <item name="任艾斯" end="-1" image="image\classmate1_2.png" map = "7" posx = "0" posy = "5" width = "2" height = "3" >
+		<talk>
+			我剛經過水池旁，看到李明穗老師好像在找饅頭，很心急的樣子
+			<needhide item = "饅頭線索"></needhide>
+			<takehide item = "饅頭線索"></takehide>
+			<givehide item = "找饅頭"></givehide>
+		</talk>
+		<talk>
+			怎麼辦，我頭髮一直掉，我好想要烏黑的頭髮喔
+			<needhide item = "期末"></needhide>
+		</talk>
+		
+		<talk>
+			我剛經過水池旁，看到李明穗老師好像在找饅頭，很心急的樣子
+			<needhide item = "找饅頭"></needhide>
+		</talk>
+		<talk end="0">
+			任艾斯：我書還沒念完，可是我想打LOL
+			<talk key="OOP" end = "2">
+				任艾斯：是不是什麼時候要考試阿？怎麼都沒有人可以教我
+			</talk>
+			<talk key="oop" end = "2">
+				任艾斯：是不是什麼時候要考試阿？怎麼都沒有人可以教我
+			</talk>
+			<talk key="LOL" end = "2">
+				任艾斯：我玩sup我超強
+			</talk>
+			<talk key="lol" end = "1">
+				任艾斯：我玩sup我超強
+			</talk>
+			<talk key="" end = "1">
+				任艾斯：唉唷～好掙扎
+			</talk>
+		</talk>
+		<useitem item = "烏黑貓毛">
+			看見烏黑貓毛的艾斯雙眼發光
+			<needhide item="期末"></needhide>
+			<talk>
+				任艾斯：太棒了，你救了我，我永遠感激你
+				<talk>
+					任艾斯：聽說你在找final project組員吧，讓我助你一臂之力吧
+					<take item="烏黑貓毛"></take>
+					<talk>
+						任艾斯：這是我的作業一，改一改就可以用了
+						<talk>
+							你獲得了 車車作業
+							<give item="車車作業"></give>
+						</talk>
+					</talk>
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item = "OOP基礎">
+			你把OOP基礎清楚的告訴了任艾斯
+			<talk>
+				任艾斯：我已經知道了啦
+				<needhide item="拿過小抄"></needhide>
+			</talk>
+			<talk>
+				任艾斯：我把你告訴我的彙整後成了這一張!&#13;這一些一定會考!
+				<talk>
+					你得到了OOP小抄
+					<give item="OOP小抄"></give>
+					<givehide item="饅頭線索"></givehide>
+					<givehide item="拿過小抄"></givehide>
+				</talk>
+			</talk>
+		</useitem>
+   </item>
+  
+   <item name="lin" end="-1" image="image\lin.png" map = "8" posx = "13" posy = "4" width = "2" height = "3" >
+		<talk>
+			林軒田：當不當就看你的final了阿!
+			<needhide item="期末"></needhide>
+		</talk>		
+		<talk>
+			林軒田：考卷要好好寫阿，考完再來找我報成績
+			<needhide item="考卷拿"></needhide>
+		</talk>
+		<talk end="0">
+			林軒田：你想要幹嘛呢？
+			<talk key="考" end = "3">
+				林軒田：想要考試是吧？慢慢寫喔
+				<talk key="" give="空白考卷" end = "4">
+					你獲得了 空白考卷
+					<give item="空白考卷"> </give>
+					<givehide item="考卷拿"></givehide>
+				</talk>
+			</talk>
+			<talk key="遊戲" end = "3" >
+				OK來吧遊戲BOY
+				<play game="pingpung" diff="4">
+					<result value = "lose">
+						哈哈你好弱
+					</result>
+					<result value = "win">
+						哈哈我好弱
+					</result>
+				</play>
+			</talk>
+			<talk key="game" end = "3">
+				OK來吧遊戲BOY
+				<play game="car">
+					<result value = "lose">
+						哈哈你好弱
+					</result>
+					<result value = "win">
+						哈哈我好弱
+					</result>
+				</play>
+			</talk>
+			<talk key="" end = "1">
+				挺好的
+			</talk>
+		</talk>
+		<useitem item="車車作業">
+			林軒田：這種東西你也敢拿來當project
+				<talk>
+					林軒田：決鬥吧！遊戲BOY
+					<play game="car">
+						<result value = "win">
+							林軒田：看來這final還蠻有程度的
+							<givehide item = "End5"></givehide>
+						</result>
+						<result value = "lose">
+							林軒田：你被當了哈哈
+							<givehide item = "End4"></givehide>
+						</result>
+					</play>
+				</talk>
+		</useitem>
+		<useitem item="59分考卷">
+			林軒田：差一點啊~那期末project好好做就OK了，去找個好組員吧
+				<givehide item="期末"></givehide>
+		</useitem>
+		
+		<useitem item="百分考卷">
+			林軒田：什麼，你竟然在我的考試拿了一百分!!
+				<talk>
+				林軒田：我決定final project也給你一百分!!
+				<givehide item="End1"></givehide>
+				</talk>
+		</useitem>
+		<useitem item="0分考卷">
+			林軒田：什麼，零分你也考得出來!!
+			<givehide item = "End4"></givehide>
+		</useitem>
+		<useitem item="高深ML">
+			林軒田：你既然把我的ML讀得這麼熟，我就送你我簽過名的ML吧
+			<give item="簽名ML"></give>
+			<take item="高深ML"></take>
+		</useitem>
+   </item>
+   <item name="amy" end="-1" image="image\amy.png" map = "1" posx = "55" posy = "23" width = "2" height = "3" >
+		<talk>
+			李明穗：承復為什麼都不大笑了呢？
+			<need item="淚水"></need>
+		</talk>
+		<talk>
+			李明穗：找到饅頭真是太棒了
+			<needhide item ="找到饅頭"></needhide>
+		</talk>
+		<talk end="0">
+			李明穗：同學你找我有什麼事？
+			<needhide item="找饅頭"></needhide>
+			<talk key="饅頭">
+				李明穗：同學你可以幫我找饅頭嗎？他不知道跑去哪了？
+				<takehide item = "找饅頭"></takehide>
+				<takehide item = "饅頭隱藏"></takehide>
+			</talk>
+			<talk key="">
+				李明穗：同學我在忙著找東西，可能沒空喔
+			</talk>
+		</talk>
+		<talk>
+		李明穗：怎麼辦，怎麼辦，怎麼辦
+		</talk>
+		<useitem item="旺仔饅頭" end='-1'>
+			<talk>
+			李明穗：這不是我的饅頭!
+				<talk>
+					李明穗：我的饅頭呢？
+					<talk>
+						李明穗：不過還是謝謝你了!
+						<talk>
+							Amy接下了你的旺仔小饅頭
+							<take item="旺仔饅頭"></take>
+						</talk>
+					</talk>
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item="饅頭" end="-1">
+			<talk>
+			李明穗：你找到我的饅頭了!
+				<talk>
+					許恩碩：老師你為什麼不講饅頭是隻貓Orz
+					<talk>
+						李明穗：你上課想必都沒認真聽!
+						<talk>
+							Amy接下了饅頭
+							<take item="饅頭"></take>
+							<givehide item="找到饅頭"></givehide>
+						</talk>
+					</talk>
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item="淚水" end="-1">
+			<talk>
+			李明穗：這...這難道是承復的淚水嗎？
+				<talk>
+					李明穗：告訴他，不哭，不哭，眼淚是珍珠
+					<talk>
+						你得到了48捲五月花
+						<give item="五月花"></give>
+						<take item="淚水"></take>
+					</talk>
+				</talk>
+			</talk>
+		</useitem>
+   </item>
+   
+   <item name="鄭卜壬" end="1" image="image\pj.png" map = "2" posx = "29" posy = "20" width = "2" height = "3" >
+		鄭卜壬：同學，我的專長是資料探勘你知道嗎？
+		<useitem item = "藏寶圖">
+			你把藏寶圖拿給了教授
+			<talk>
+				鄭卜壬：這圖!感覺有很多東西可以挖欸!讓我挖挖看
+				<talk>
+					教授挖出了打不開的寶藏
+					<take item="藏寶圖"></take>
+					<give item="寶藏箱"></give>
+				</talk>
+			</talk>
+		</useitem>
+		
+   </item> 
+	<item name="林智仁" end="1" image="image\jl.png" map="3" posx="8" posy="14" width="2" height="3">
+	林智仁：你今天，機器學習了嗎？
+	</item>
+   <item name="許永真" end="1" image="image\hsu.png" map = "4" posx = "12" posy = "8" width = "2" height = "3" >
+		許永真：同學你好，不好意思，我正在忙欸
+		<talk>
+			許永真：系館空間不夠的問題一直無法解決，可能沒空幫你
+		</talk>
+		<useitem item = "Python3">
+			許永真：同學你也很喜歡python嗎？
+			<talk>
+				許永真：但你知道，python其實只需要一分鐘就可以學會了
+				<talk>
+					你的三分鐘學python升級成了一分鐘學python
+					<take item = "Python3"></take>
+					<give item = "Python1"></give>
+				</talk>
+			</talk>
+		</useitem>
+		<useitem item = "Python1">
+			許永真：好好學python阿~
+		</useitem>
+		<useitem item = "一棟系館">
+			你為系上捐出了一棟系館
+			<talk>
+				許永真：同學，你這種情操真是太令人感動了
+				<take item = "一棟系館"></take>
+				<givehide item="End2"></givehide>
+			</talk>
+		</useitem>
+   </item>  
+ </itemlist> 

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="BIG5"?> 
+ <itemdetail> 
+	<item name="歡樂ML" image="image\ML_book.png">
+	人人都愛的歡樂ML
+	<use>
+	你苦讀了一整天習得了高深ML知識
+	<take item="歡樂ML"/>
+	<give item="高深ML"/>
+	</use>
+	</item>
+	<item name="空白考卷" image="image\paper.png">
+	空白的OOP考卷
+		<use>
+			你要使用一些知識才能寫它
+		</use>
+	</item> 
+	<item name="0分考卷" image="image\0.png">
+	0分的OOP考卷
+		<use>
+			你怎麼會有你會考高分的錯覺
+		</use>
+	</item>	
+	<item name="59分考卷" image="image\59.png">
+	59分的OOP考卷
+		<use>
+			你慘了你
+		</use>
+	</item> 
+
+	<item name="60分考卷" image="image\60.png">
+	60分的OOP考卷
+		<use>
+			低空飛過
+		</use>
+	</item> 
+	<item name="百分考卷" image="image\100.png">
+	100分的OOP考卷
+		<use>
+			各位觀眾，100分!!
+		</use>
+	</item>
+	
+	<item name="藏寶圖" image="image\map.png">
+	你看不太懂這上面到底畫什麼
+		<use>
+			你需要找人幫忙解讀
+		</use>
+	</item> 
+	<item name="旺仔饅頭" imgae="image\bread.png">
+	童年的小甜點，大家都喜歡
+		<use>
+			直接吃掉他？不好吧。
+		</use>
+	</item>
+	
+	<item name="金田一" image="image\comic_book.png">
+	恐怖的金田一少年事件簿
+		<use>
+			你現在腦中充斥著OOP不想看這個而忘掉
+			<need item = "OOP基礎"></need>
+		</use>
+		<use>
+			你的ML說他不想看金田一
+			<need item = "高深ML"></need>
+		</use>
+		<use>
+			獲得 偵探基礎
+			<take item = "金田一"></take>
+			<give item = "偵探基礎"></give>
+		</use>
+	</item> 
+	<item name="饅頭" image="image\cat.png">
+	李明穗老師的可愛家貓「饅頭」
+		<use>
+			你想對饅頭做什麼!!!
+		</use>
+	</item> 	
+	<item name="恐怖OOP" image="image\OOP_book.png">
+	恐怖的OOP磚塊書
+		<use>
+			你看完了爽爽金田一後就沒興趣看這本了
+			<need item = "偵探基礎"></need>
+		</use>
+		<use>
+			你的ML說他不想看OOP
+			<need item = "高深ML"></need>
+		</use>
+		
+		<use>
+			獲得 OOP基礎
+			<take item = "恐怖OOP"></take>
+			<give item = "OOP基礎"></give>
+		</use>
+	</item> 
+	<item name="烏黑貓毛" image="image\hair.png">
+	油亮的烏黑貓毛，感覺比人的頭髮還漂亮
+		<use>
+			你想拿來裝飾什麼嗎？
+		</use>
+	</item>
+	<item name="OOP基礎" image="image\basic_oop.png">
+	OOP的基礎
+		<use>
+			你寫完了考卷，獲得59分
+			<need item = "空白考卷"></need>
+			<take item = "空白考卷"></take>
+			<give item = "59分考卷"></give>
+		</use>
+		<use>
+			沒有地方讓你使用這項知識
+		</use>
+	</item> 
+	<item name="OOP小抄" image="image\oop_note1.png">
+	OOP的小抄，上面寫的跟你印象中的好像有點不同
+		<use>
+			你寫完了考卷，但因為使用小抄獲得0分
+			<need item = "空白考卷"></need>
+			<take item = "空白考卷"></take>
+			<give item = "0分考卷"></give>
+		</use>
+		<use>
+			沒有地方讓你使用這張小抄
+		</use>
+	</item>
+	<item name="完美大抄" image="image\oop_note2.png">
+	OOP的大鈔，這東西只有Perfect可以形容
+		<use>
+			你寫完了考卷，獲得100分
+			<need item = "空白考卷"></need>
+			<take item = "空白考卷"></take>
+			<give item = "百分考卷"></give>
+		</use>
+		<use>
+			這張用完以後可以錶框收藏&#13;但現在沒有地方可以讓你使用這張大抄
+		</use>
+	</item>	
+	<item name="偵探基礎" image="image\conan.png">
+	偵探的基礎
+		<use>
+			在考卷上發現了藏寶圖
+			<need item = "空白考卷"></need>
+			<take item = "空白考卷"></take>
+			<give item = "藏寶圖"></give>
+		</use>
+		<use>
+			沒有地方讓你使用這項知識
+		</use>
+	</item> 
+	<item name="高深ML" image="image\High_ML.png">
+	你認真苦讀獲得的高深ML知識
+		<use>
+			你寫完了考卷，獲得0分
+			<need item = "空白考卷"></need>
+			<take item = "空白考卷"></take>
+			<give item = "0分考卷"></give>
+		</use>
+		<use>
+			沒有地方讓你使用這項知識
+		</use>
+	</item> 
+	<item name="簽名ML" image="image\ML_book.png">
+	有著作者親筆簽名的ML課本
+		<use>
+			這可是一個值得炫耀的好東西，拿給別人看或許有好事發生
+		</use>
+	</item>
+	<item name="五月花" image="image\may_flowers.png">
+	你有了48捲五月花衛生紙
+		<use>
+			看到這麼多衛生紙，不禁有些感傷想哭
+		</use>
+	</item>
+	<item name="破桌球拍" image="image\tabletennis.png">
+	這是一把臭臭的桌球拍
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>
+	<item name="菁英球拍" image="image\elite.png">
+	這是一把ELO突破天際的桌球拍
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>
+	<item name="白金球拍" image="image\platinum.png">
+	這是一把ELO 1700的桌球拍
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>
+	<item name="鑽石球拍" image="image\diamond.png">
+	這是一把ELO 2000的桌球拍
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>
+	<item name="一勝" image="image\ccf_1.png">
+	你贏了教授一次
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>	
+	<item name="二勝" image="image\ccf_2.png">
+	你贏了教授二次
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>	
+	<item name="三勝" image="image\ccf_3.png">
+	你贏了教授三次
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>	
+	<item name="四勝" image="image\ccf_4.png">
+	你贏了教授四次
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>	
+	<item name="五勝" image="image\ccf_5.png">
+	你贏了教授五次
+		<use>
+			你想拿來幹嘛？
+		</use>
+	</item>	
+	<item name="淚水" image="image\ccf_tear.png">
+	教授所流下，恥辱的淚水
+		<use>
+			你是想要...喝嗎？
+		</use>
+	</item>	
+	<item name="Python3" image="image\3_PYBook.png">
+		3分鐘就可以學會python，沒問題!
+		<use>
+			許永真老師好像很喜歡python，但你現在沒有時間學他
+		</use>
+	</item>
+	<item name="Python1" image="image\1_PYBook.png">
+		1分鐘就可以學會python，沒問題!
+		<use>
+			你現在還是沒有時間學他
+		</use>
+	</item>
+	<item name="寶藏箱" image="image\treasure.png">
+		打不開的寶藏箱
+		<use>
+			你完全打不開它
+		</use>
+	</item>
+	<item name="超●多錢" image="image\money.png">
+		超級多錢!
+		<use>
+			你現在什麼都買的起
+		</use>
+	</item>
+	<item name="很●多錢" image="image\treasure_money.png">
+		少了三千萬的超級多錢!
+		<use>
+			你還是什麼都買的起
+		</use>
+	</item>
+	<item name="一棟系館" image="image\building.png">
+		豪華系館一棟
+		<use>
+			你要送給誰嗎?
+		</use>
+	</item>
+	<item name="百元" image="image\money_100.png">
+		找到一百元，超lucky
+		<use>
+			一百元可以拿來買什麼呢？去商店看看好了
+		</use>
+	</item>
+	<item name="車車作業" image="image\car.gif">
+		這是任艾斯的OOP作業一
+		<use>
+			目前無法使用
+		</use>
+	</item>
+ </itemdetail> 

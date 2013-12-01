@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="BIG5"?> 
+ <maplist>
+	<map id="1" image="image\new_Map.png" 
+	isSpace = "mapInfo\new_Map.isSpace">
+
+		<leavePoint mapPosX="21" mapPosY ="37"
+					destMapID="2" 
+					destPosX="30" destPosY="2">
+		</leavePoint>
+
+		<leavePoint mapPosX="96" mapPosY ="12"
+					destMapID="5" 
+					destPosX="17" destPosY="22">
+		</leavePoint>
+		
+		<leavePoint mapPosX="2" mapPosY ="9"
+					destMapID="6" 
+					destPosX="31" destPosY="6">
+		</leavePoint>
+		<leavePoint mapPosX="3" mapPosY ="9"
+					destMapID="6" 
+					destPosX="31" destPosY="6">
+		</leavePoint>
+		<leavePoint mapPosX="4" mapPosY ="9"
+					destMapID="6" 
+					destPosX="31" destPosY="6">
+		</leavePoint>
+		<leavePoint mapPosX="5" mapPosY ="9"
+					destMapID="6" 
+					destPosX="31" destPosY="6">
+		</leavePoint>
+		<leavePoint mapPosX="6" mapPosY ="9"
+					destMapID="6" 
+					destPosX="31" destPosY="6">
+		</leavePoint>
+		
+		<leavePoint mapPosX="87" mapPosY ="31"
+					destMapID="7" 
+					destPosX="25" destPosY="21">
+		</leavePoint>		
+		<leavePoint mapPosX="88" mapPosY ="31"
+					destMapID="7" 
+					destPosX="25" destPosY="21">
+		</leavePoint>		
+		<leavePoint mapPosX="89" mapPosY ="31"
+					destMapID="7" 
+					destPosX="25" destPosY="21">
+		</leavePoint>		
+		<leavePoint mapPosX="90" mapPosY ="31"
+					destMapID="7" 
+					destPosX="25" destPosY="21">
+		</leavePoint>				
+	</map>
+	<map id="2" image="image\room_f1.png" 
+	isSpace = "mapInfo\room_f1.isSpace">
+		<!--f1 -> main -->
+		<leavePoint mapPosX="30" mapPosY ="1"
+					destMapID="1" 
+					destPosX="22" destPosY="37">
+		</leavePoint>
+		<leavePoint mapPosX="31" mapPosY ="1"
+					destMapID="1" 
+					destPosX="22" destPosY="37">
+		</leavePoint>
+		<leavePoint mapPosX="32" mapPosY ="1"
+					destMapID="1" 
+					destPosX="22" destPosY="37">
+		</leavePoint>
+		<!--f1 -> f2 done -->
+		<leavePoint mapPosX="1" mapPosY ="22"
+					destMapID="3" 
+					destPosX="30" destPosY="22">
+		</leavePoint>
+	</map>
+	<map id="3" image="image\room_f2.png" 
+	isSpace = "mapInfo\room_f2.isSpace">
+		<!--f2 -> f1 done -->
+		<leavePoint mapPosX="31" mapPosY ="22"
+					destMapID="2" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<!--f2 -> f3 -->
+		<leavePoint mapPosX="1" mapPosY ="22"
+					destMapID="4" 
+					destPosX="18" destPosY="1">
+		</leavePoint>
+		<leavePoint mapPosX="0" mapPosY ="11"
+					destMapID="8" 
+					destPosX="31" destPosY="21">
+		</leavePoint>
+	</map>
+	<map id="4" image="image\room_f3.png" 
+	isSpace = "mapInfo\room_f3.isSpace">
+		<!--f3 -> f2 -->
+		<leavePoint mapPosX="12" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="13" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="14" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="15" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="16" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="17" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+		<leavePoint mapPosX="18" mapPosY ="0"
+					destMapID="3" 
+					destPosX="2" destPosY="22">
+		</leavePoint>
+	</map>
+	<map id="5" image="image\home.png" 
+	isSpace = "mapInfo\home.isSpace">
+
+		<leavePoint mapPosX="15" mapPosY ="23"
+					destMapID="1" 
+					destPosX="96" destPosY="13">
+		</leavePoint>
+		<leavePoint mapPosX="16" mapPosY ="23"
+					destMapID="1" 
+					destPosX="96" destPosY="13">
+		</leavePoint>
+		<leavePoint mapPosX="17" mapPosY ="23"
+					destMapID="1" 
+					destPosX="96" destPosY="13">
+		</leavePoint>		
+	</map>
+	<map id="6" image="image\market.png" 
+	isSpace = "mapInfo\market.isSpace">
+		<leavePoint mapPosX="32" mapPosY ="5"
+					destMapID="1" 
+					destPosX="4" destPosY="10">
+		</leavePoint>
+		<leavePoint mapPosX="32" mapPosY ="6"
+					destMapID="1" 
+					destPosX="4" destPosY="10">
+		</leavePoint>
+		<leavePoint mapPosX="32" mapPosY ="7"
+					destMapID="1" 
+					destPosX="4" destPosY="10">
+		</leavePoint>
+	</map>
+	<map id="7" image="image\library.png" 
+	isSpace = "mapInfo\library.isSpace">
+		<leavePoint mapPosX="24" mapPosY ="22"
+					destMapID="1" 
+					destPosX="88" destPosY="32">
+		</leavePoint>
+		<leavePoint mapPosX="25" mapPosY ="22"
+					destMapID="1" 
+					destPosX="88" destPosY="32">
+		</leavePoint>
+		<leavePoint mapPosX="26" mapPosY ="22"
+					destMapID="1" 
+					destPosX="88" destPosY="32">
+		</leavePoint>
+	</map>
+	<map id="8" image="image\room_f2_2.png" 
+	isSpace = "mapInfo\room_f2_2.isSpace">
+		<leavePoint mapPosX="32" mapPosY ="20"
+					destMapID="3" 
+					destPosX="1" destPosY="11">
+		</leavePoint>
+		<leavePoint mapPosX="32" mapPosY ="21"
+					destMapID="3" 
+					destPosX="1" destPosY="11">
+		</leavePoint>					
+	</map>	
+ </maplist> 
